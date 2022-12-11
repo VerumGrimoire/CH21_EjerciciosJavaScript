@@ -87,10 +87,93 @@ console.log(numeros4.sort(function() {return Math.random() - 0.5}));
 
 //Solicitar 3 números (entre el 1 y el 100) y definir cual es el mayor
 
+{let n1, n2, n3, t, mayor;
+  n1 =  Math.floor(Math.random() * 100);
+  n2 =  Math.floor(Math.random() * 100);
+  n3 =  Math.floor(Math.random() * 100);
+
+ if (n1 > n2) {
+	t = n1;
+ }else {
+	t = n2;
+ }
+ 
+ if (t > n3) {
+	mayor = t;
+ }else {
+	mayor = n3;
+ }
+// document.write("El mayor es" + mayor);
+console.log(n1 + " " + n2 + " " + n3 + " " + " El mayor es " + mayor);
+}
+
 
 
 //Solicitar 3 números (entre el 1 y el 100) y definir el menor de tres números
+
+ {let n1, n2, n3, t, menor;
+  n1 =  Math.floor(Math.random() * 100);
+  n2 =  Math.floor(Math.random() * 100);
+  n3 =  Math.floor(Math.random() * 100);
+
+ if (n1 < n2) {
+	t = n1;
+ }else {
+	t = n2;
+ }
+ 
+ if (t < n3) {
+	menor = t;
+ }else {
+	menor = n3;
+ }
+
+console.log(n1 + " " + n2 + " " + n3 + " " + " El menor es " + menor);
+}
+
+
 //Adivinar un número entre el 1 y el 100 en el menor número de pasos posibles
+
+{let randomNum = Math.floor(Math.random() * 100);
+
+console.log("Tu número entre el 1 y 100 es: " + randomNum);
+}
+
+
+
+
+
+
 //Solicitar un entero (entre el 100 y el 200) y determinar si es múltiplo de 3
+
 //Elaborar un algoritmo para leer 3 números y determinar sí uno es la suma de los otros dos
+
+{let n1, n2, n3, sumado;
+	n1 =  45;
+	n2 =  34;
+	n3 =  11;
+
+   if (n1 >= n2 + n3) {
+	sumado = n1
+   }else if (n2 >= n1 + n3) {
+ 	sumado = n2
+   }else if (n3 >= n1 + n2) {
+	sumado = n3
+   }
+	
+  
+  console.log(n1 + " " + n2 + " " + n3 + " " + " El número que es la suma de los anteriores es " + sumado);
+  }
+
 //Elabora un algoritmo para leer un número y determinar si es par o impar
+
+{let n1;
+
+n1 = Math.floor(Math.random() * 100);
+
+if (n1 %2 ==0){
+	console.log(n1 + " Es par");
+}else{
+	console.log(n1 + " Es impar");
+}
+}
